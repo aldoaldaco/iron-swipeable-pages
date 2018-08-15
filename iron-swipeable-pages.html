@@ -24,15 +24,15 @@ The following custom properties and mixins are available for styling:
 
 | Mixins                                                 | Selector                                           | Value |
 | ------------------------------------------------------ | -------------------------------------------------- | ----- |
-| --cells-iron-swipeable-pages                           | :host                                              | {}    |
-| --cells-iron-swipeable-pages-slotted                   | ::slotted(*)                                       | {}    |
-| --cells-iron-swipeable-pages-slotted-not-iron-selected | ::slotted(:not(.iron-selected):not(.iron-swiping)) | {}    |
+| --iron-swipeable-pages                           | :host                                              | {}    |
+| --iron-swipeable-pages-slotted                   | ::slotted(*)                                       | {}    |
+| --iron-swipeable-pages-slotted-not-iron-selected | ::slotted(:not(.iron-selected):not(.iron-swiping)) | {}    |
 
 @demo demo/index.html
-@hero cells-iron-swipeable-pages.png
+@hero iron-swipeable-pages.png
 -->
 
-<dom-module id="cells-iron-swipeable-pages">
+<dom-module id="iron-swipeable-pages">
   <template>
     <style include="iron-swipeable-pages-styles"></style>
     <slot></slot>
