@@ -1,0 +1,42 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../iron-resizable-behavior/iron-resizable-behavior.html">
+<link rel="import" href="../iron-selector/iron-selectable.html">
+<link rel="import" href="iron-swipeable-pages-styles.html">
+
+<!--
+`<cells-iron-swipeable-pages>` manages a set of pages and and provides the ability to switch
+between them by swiping gesture.
+
+This component is a wrapper from iron-swipeable-pages you can see his [documentation](https://geoloeg.github.io/iron-swipeable-pages/) for more information.
+
+Example:
+```
+<cells-iron-swipeable-pages selected="0">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+</cells-iron-swipeable-pages>
+```
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Mixins                                                 | Selector                                           | Value |
+| ------------------------------------------------------ | -------------------------------------------------- | ----- |
+| --cells-iron-swipeable-pages                           | :host                                              | {}    |
+| --cells-iron-swipeable-pages-slotted                   | ::slotted(*)                                       | {}    |
+| --cells-iron-swipeable-pages-slotted-not-iron-selected | ::slotted(:not(.iron-selected):not(.iron-swiping)) | {}    |
+
+@demo demo/index.html
+@hero cells-iron-swipeable-pages.png
+-->
+
+<dom-module id="cells-iron-swipeable-pages">
+  <template>
+    <style include="iron-swipeable-pages-styles"></style>
+    <slot></slot>
+  </template>
+
+  <script src="iron-swipeable-pages.js"></script>
+</dom-module>

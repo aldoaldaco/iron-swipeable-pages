@@ -1,0 +1,21 @@
+<dom-module id="iron-swipeable-pages-styles"><template><style>
+    :host {
+        position: relative;
+        display: block;
+        overflow-x: hidden;
+        font-family: var(--fontDefault, sans-serif);
+        @apply --iron-swipeable-pages; }
+
+    ::slotted(*) {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        will-change: left;
+        @apply --iron-swipeable-pages-slotted; }
+
+    ::slotted(:not(.iron-selected):not(.iron-swiping)) {
+        left: -106% !important;
+        @apply --iron-swipeable-pages-slotted-not-iron-selected; }
+
+</style></template></dom-module>
